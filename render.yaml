@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: your-app-name
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "sh setup.sh && streamlit run app.py"
